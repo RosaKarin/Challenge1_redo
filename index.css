@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
+
+.grid-container {
+    display: grid;
+    gap: 50px;
+    padding: 20px;
+}
+
+.grid-item {
+    background-color: pink;
+    /* border: solid 1px; */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+h3, h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    Font-Family: 'Open Sans', Sans-Serif;
+    color: black;
+}
