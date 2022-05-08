@@ -33,14 +33,29 @@ p {
     color: black;
 }
 
-/* Vormgeving Poll results for pie of the day */
 
+
+/* Speed visialisation - ITEM1 */
+#speed {
+    margin-left: 35%;
+}
+
+/* KM travelled visualisation- ITEM2 */
+
+
+/* Vormgeving Poll results for pie of the day - ITEM 4*/
 .smallText{
     color: darkgray;
     font-size: 75%;
 }
 
 #pieChart{
-    margin-left: 13%;
+    margin-left: 5%;
+    width: 100%;
 }
 
+
+
+/* #columnchart svg > rect , #donutchart svg > rect , #gauge svg > rect {
+	fill: none;
+} */
