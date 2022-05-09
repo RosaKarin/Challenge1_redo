@@ -6,3 +6,5 @@ Voor het ontwerp wilde ik het simpel houden en heb ik gekozen voor een gradient,
 
 Voor het data visualisaties heb ik visualisaties gebruikt van Google Charts en deze aangepast zodat deze aansluiten op het onderwerp van dit project.
 Ik heb nagedacht over wat ik persoonlijk graag zou willen weten als ik aan boord zou zijn van een ruimteschip. De keuze is gevallen op de snelheid van het ruimteschip en de afgelegde kilometers per dag. Verder ben ik van mening dat er best een taartje gegeten mag worden om te vieren dat we naar Mars gaan. Echter moet er wel eerst gestemd worden welke taart vanavond geserveerd zal worden aangezien democratie ook in de ruimte wordt gerespecteerd ;).
+
+Op de mobiele versie zullen de visualisatie onder elkaar worden weergegeven met alleen een titel. Wanneer er wordt geschaalt naar de tablet versie, zal er ondersteunende tekst bij de visualisaties verschijnen.
