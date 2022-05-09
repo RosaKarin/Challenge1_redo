@@ -14,12 +14,14 @@ body {
 }
 
 .grid-item {
-    /* background-color: white; */
     background-color: rgba(255, 255, 255, 0.7);
+    /* margin: 15px; */
     padding: 20px;
     text-align: center;
-    align-items: center;
+    align-content: center;
+    align-self: center;
     border-radius: 10px;
+    max-width: 90%;
 }
 
 h3, h4{
@@ -33,19 +35,12 @@ p {
     color: black;
 }
 
-
-
-/* Speed visialisation - ITEM1 */
-#speed {
-    margin-left: 35%;
-}
-
 /* KM travelled visualisation- ITEM2 */
 
 
 /* Vormgeving Poll results for pie of the day - ITEM 4*/
 .smallText{
-    color: darkgray;
+    /* color: white; */
     font-size: 75%;
 }
 
@@ -54,8 +49,91 @@ p {
     width: 100%;
 }
 
-
-
-/* #columnchart svg > rect , #donutchart svg > rect , #gauge svg > rect {
+/* Verwijderd achtergrond svg en lost probleem met overlappende pieChart op */
+#speed svg > rect , #chart_div svg > rect , #pieChart svg > rect {
 	fill: none;
-} */
+}
+
+
+/*Mobile*/
+@media only screen and (max-width: 600px) {
+    .grid-container{
+        margin: 0 auto;
+        display: inline-grid;
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4";
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    #speed {
+        margin-left: 32%;
+    } 
+
+    #chart_div {
+        width: 480px;
+        height: 250px;
+        margin: 0 auto;
+    } 
+}
+
+
+/*Tablet*/
+@media only screen and (min-width: 600px) and (max-width: 1023px) {
+    .grid-container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4";
+    }
+
+    #speed {
+        margin-left: 38%;
+    } 
+
+    #chart_div {
+        width: 480px;
+        height: 250px;
+        margin: 0 auto;
+    } 
+}
+
+/* Laptop (kleine desktop)*/
+@media only screen and (min-width: 1024px) and (max-width: 1598px) {   
+    .grid-container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "item1			item1"
+        "item2			item3"
+        "item4			item4";
+    }
+
+/*Grote desktop*/
+@media only screen and (min-width: 1599px) {
+    .grid-container{
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "item1 		item1			item1"
+        "item2 		item2			item3";
+    }
+
+    /* .item1{
+        display: block;
+    } */
+}
