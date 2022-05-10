@@ -23,10 +23,6 @@ function speed() {
         chart.draw(data, options);
     }, 1000);
 }
-    // var gaugeOptions = {min: 0, max: 280, yellowFrom: 200, yellowTo: 250,
-    //   redFrom: 250, redTo: 280, minorTicks: 5};
-    // var gauge;
-
 
 // KM travelled visualisation- ITEM2
 google.charts.load('current', {'packages':['corechart']});
@@ -53,34 +49,6 @@ google.charts.load('current', {'packages':['corechart']});
         var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
-
-// // // Water left visualisation- ITEM3
-//     google.charts.load("current", {packages:['corechart']});
-//     google.charts.setOnLoadCallback(drawChart);
-//     function drawChart() {
-//       var data = google.visualization.arrayToDataTable([
-//         ["Element", "Contents in %", { role: "style" } ],
-//         ["Water", 95, "blue"],
-//       ]);
-
-//       var view = new google.visualization.DataView(data);
-//       view.setColumns([0, 1,
-//                        { calc: "stringify",
-//                          sourceColumn: 1,
-//                          type: "string",
-//                          role: "annotation" },
-//                        2]);
-
-//       var options = {
-//         title: "",
-//         width: 0,
-//         height: 325,
-//         bar: {groupWidth: "95%"},
-//         legend: { position: "center" },
-//       };
-//       var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
-//       chart.draw(view, options);
-//   };
 
 // Pie chart about pie of the day - ITEM4
 const pieChart = {
@@ -115,5 +83,33 @@ google.charts.load('current', {
 });
 
 
+
+// // // Water left visualisation- ITEM3
+//     google.charts.load("current", {packages:['corechart']});
+//     google.charts.setOnLoadCallback(drawChart);
+//     function drawChart() {
+//       var data = google.visualization.arrayToDataTable([
+//         ["Element", "Contents in %", { role: "style" } ],
+//         ["Water", 95, "blue"],
+//       ]);
+
+//       var view = new google.visualization.DataView(data);
+//       view.setColumns([0, 1,
+//                        { calc: "stringify",
+//                          sourceColumn: 1,
+//                          type: "string",
+//                          role: "annotation" },
+//                        2]);
+
+//       var options = {
+//         title: "",
+//         width: 0,
+//         height: 325,
+//         bar: {groupWidth: "95%"},
+//         legend: { position: "center" },
+//       };
+//       var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+//       chart.draw(view, options);
+//   };
 
 

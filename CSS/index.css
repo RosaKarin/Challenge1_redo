@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;700&display=swap');
-/* Algemeen */
+/* ALGEMENE VORMGEVING */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,6 +11,18 @@ body {
     background: radial-gradient(circle, rgba(202,174,238,1) 19%, rgba(51,81,251,1) 100%);
 }
 
+h3, h4{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+p {
+    Font-Family: 'Open Sans', Sans-Serif;
+    color: black;
+}
+
+/* VORMGEVING GRID */
 .grid-container {
     display: grid;
     gap: 20px;
@@ -28,32 +40,8 @@ body {
     max-width: 90%;
 }
 
-h3, h4{
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    color: black;
-}
-
-p {
-    Font-Family: 'Open Sans', Sans-Serif;
-    color: black;
-}
-
-/* Padding tussen titel en kopij */
-.need4speed {
+.titlePadding {
     padding: 25px;
-}
-
-
-/* Vormgeving Poll results for pie of the day - ITEM 4*/
-.smallText{
-    /* color: white; */
-    font-size: 75%;
-}
-
-#pieChart{
-    margin-left: 5%;
-    width: 100%;
 }
 
 /* Verwijderd achtergrond svg en lost probleem met overlappende pieChart op */
@@ -61,7 +49,7 @@ p {
 	fill: none;
 }
 
-/* Declarering van grid items */
+/* DECALARATIE VAN GRID ITEMS */
 div > .item1 {
     grid-area: item1;
   }
@@ -79,13 +67,23 @@ div >  .item3 {
   }
 
 
-/*Mobile*/
+/* Vormgeving Poll results for pie of the day - ITEM 4*/
+.smallText{
+    font-size: 75%;
+}
+
+#pieChart{
+    margin-left: 5%;
+    width: 100%;
+}
+
+
+/*MOBIELE WEERGAVE*/
 @media only screen and (max-width: 600px) {
     .grid-container{
         margin: 0 auto;
         display: inline-grid;
         grid-template-columns: 1fr;
-
         grid-template-areas:
         "item1"
         "item2"
@@ -93,7 +91,8 @@ div >  .item3 {
         "item4";
     }
 
-    .hidden {
+
+    .hidden { /* Verbergt de teksten welke in de andere weergaveopties wel te zien zijn */
         display: none;
     }
 
@@ -109,7 +108,7 @@ div >  .item3 {
 }
 
 
-/*Tablet*/
+/*TABLET WEERGAVE*/
 @media only screen and (min-width: 600px) and (max-width: 1023px) {
     .grid-container{
         margin: 0 auto;
@@ -136,11 +135,6 @@ div >  .item3 {
 
 /* Laptop (kleine desktop)*/
 @media only screen and (min-width: 1024px) and (max-width: 1598px) {   
-
-    body {
-        background-color: pink;
-    }
-
     .grid-container{
         margin: 0 auto;
         display: grid;
@@ -182,11 +176,6 @@ div >  .item3 {
 
 /*Grote desktop*/
 @media only screen and (min-width: 1599px) {
-
-    /* body {
-        background-color: green;
-    } */
-
     .grid-container {
         margin: 5px;
     }
@@ -198,8 +187,6 @@ div >  .item3 {
         grid-template-areas:
         "item1 		item1			item1"
         "item2 		item3			item4";
-    }
-
-    
+    } 
 }
 
